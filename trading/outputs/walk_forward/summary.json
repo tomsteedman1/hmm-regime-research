@@ -1,0 +1,12 @@
+{
+  "first_year": 2015,
+  "last_year": 2024,
+  "scored_days": 2513,
+  "gates": {
+    "TG1": false,
+    "TG2": false,
+    "TG3": false,
+    "TG4": "sealed"
+  },
+  "seconds": 250.1956262588501
+}

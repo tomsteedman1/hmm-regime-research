@@ -1,0 +1,258 @@
+{
+  "pooled": [
+    {
+      "loss": "qlike",
+      "proxy": "r2",
+      "comparison": "hmm_vs_ewma",
+      "mean_diff": 0.07605246886054129,
+      "stat": 1.7146557845297226,
+      "p_value": 0.08640835459586915,
+      "n": 2516,
+      "hmm_wins_assets": 6,
+      "assets": 18
+    },
+    {
+      "loss": "qlike",
+      "proxy": "r2",
+      "comparison": "hmm_vs_garch",
+      "mean_diff": 0.10190209397015412,
+      "stat": 2.4123666379222892,
+      "p_value": 0.01584933455079307,
+      "n": 2516,
+      "hmm_wins_assets": 0,
+      "assets": 18
+    },
+    {
+      "loss": "qlike",
+      "proxy": "r2",
+      "comparison": "hmm_vs_har",
+      "mean_diff": -0.04576546731903671,
+      "stat": -1.1341917373928199,
+      "p_value": 0.2567141291562749,
+      "n": 2516,
+      "hmm_wins_assets": 8,
+      "assets": 18
+    },
+    {
+      "loss": "mse",
+      "proxy": "r2",
+      "comparison": "hmm_vs_ewma",
+      "mean_diff": 10.868455533406083,
+      "stat": 0.44827750206781375,
+      "p_value": 0.6539529353378095,
+      "n": 2516,
+      "hmm_wins_assets": 4,
+      "assets": 18
+    },
+    {
+      "loss": "mse",
+      "proxy": "r2",
+      "comparison": "hmm_vs_garch",
+      "mean_diff": 15.41902216292893,
+      "stat": 1.0480671167869022,
+      "p_value": 0.29460768526013337,
+      "n": 2516,
+      "hmm_wins_assets": 0,
+      "assets": 18
+    },
+    {
+      "loss": "mse",
+      "proxy": "r2",
+      "comparison": "hmm_vs_har",
+      "mean_diff": 29.52403687723212,
+      "stat": 1.573213555424987,
+      "p_value": 0.11566937758141327,
+      "n": 2516,
+      "hmm_wins_assets": 7,
+      "assets": 18
+    },
+    {
+      "loss": "qlike",
+      "proxy": "gk",
+      "comparison": "hmm_vs_ewma",
+      "mean_diff": 0.10376035346058042,
+      "stat": 7.360411270132715,
+      "p_value": 1.8340884366807586e-13,
+      "n": 2516,
+      "hmm_wins_assets": 0,
+      "assets": 18
+    },
+    {
+      "loss": "qlike",
+      "proxy": "gk",
+      "comparison": "hmm_vs_garch",
+      "mean_diff": 0.06693147162974003,
+      "stat": 5.092491681621094,
+      "p_value": 3.5338822357289246e-07,
+      "n": 2516,
+      "hmm_wins_assets": 0,
+      "assets": 18
+    },
+    {
+      "loss": "qlike",
+      "proxy": "gk",
+      "comparison": "hmm_vs_har",
+      "mean_diff": 0.21014426897069421,
+      "stat": 16.354531940876814,
+      "p_value": 0.0,
+      "n": 2516,
+      "hmm_wins_assets": 0,
+      "assets": 18
+    },
+    {
+      "loss": "mse",
+      "proxy": "gk",
+      "comparison": "hmm_vs_ewma",
+      "mean_diff": -32.2263180235995,
+      "stat": -1.7904710077618466,
+      "p_value": 0.07337822400037752,
+      "n": 2516,
+      "hmm_wins_assets": 11,
+      "assets": 18
+    },
+    {
+      "loss": "mse",
+      "proxy": "gk",
+      "comparison": "hmm_vs_garch",
+      "mean_diff": -7.837838439146801,
+      "stat": -1.1576263934403483,
+      "p_value": 0.24701653361098197,
+      "n": 2516,
+      "hmm_wins_assets": 9,
+      "assets": 18
+    },
+    {
+      "loss": "mse",
+      "proxy": "gk",
+      "comparison": "hmm_vs_har",
+      "mean_diff": 11.913166246285543,
+      "stat": 1.8706846791408334,
+      "p_value": 0.061388799627448476,
+      "n": 2516,
+      "hmm_wins_assets": 2,
+      "assets": 18
+    }
+  ],
+  "counts": [
+    {
+      "proxy": "gk",
+      "loss": "mse",
+      "comparison": "hmm_vs_ewma",
+      "assets": 18,
+      "hmm_better": 11,
+      "hmm_better_p5": 3,
+      "rival_better_p5": 0,
+      "holm_p5": 1
+    },
+    {
+      "proxy": "gk",
+      "loss": "mse",
+      "comparison": "hmm_vs_garch",
+      "assets": 18,
+      "hmm_better": 9,
+      "hmm_better_p5": 1,
+      "rival_better_p5": 4,
+      "holm_p5": 2
+    },
+    {
+      "proxy": "gk",
+      "loss": "mse",
+      "comparison": "hmm_vs_har",
+      "assets": 18,
+      "hmm_better": 2,
+      "hmm_better_p5": 0,
+      "rival_better_p5": 10,
+      "holm_p5": 9
+    },
+    {
+      "proxy": "gk",
+      "loss": "qlike",
+      "comparison": "hmm_vs_ewma",
+      "assets": 18,
+      "hmm_better": 0,
+      "hmm_better_p5": 0,
+      "rival_better_p5": 15,
+      "holm_p5": 12
+    },
+    {
+      "proxy": "gk",
+      "loss": "qlike",
+      "comparison": "hmm_vs_garch",
+      "assets": 18,
+      "hmm_better": 0,
+      "hmm_better_p5": 0,
+      "rival_better_p5": 12,
+      "holm_p5": 9
+    },
+    {
+      "proxy": "gk",
+      "loss": "qlike",
+      "comparison": "hmm_vs_har",
+      "assets": 18,
+      "hmm_better": 0,
+      "hmm_better_p5": 0,
+      "rival_better_p5": 18,
+      "holm_p5": 18
+    },
+    {
+      "proxy": "r2",
+      "loss": "mse",
+      "comparison": "hmm_vs_ewma",
+      "assets": 18,
+      "hmm_better": 4,
+      "hmm_better_p5": 0,
+      "rival_better_p5": 0,
+      "holm_p5": 0
+    },
+    {
+      "proxy": "r2",
+      "loss": "mse",
+      "comparison": "hmm_vs_garch",
+      "assets": 18,
+      "hmm_better": 0,
+      "hmm_better_p5": 0,
+      "rival_better_p5": 1,
+      "holm_p5": 0
+    },
+    {
+      "proxy": "r2",
+      "loss": "mse",
+      "comparison": "hmm_vs_har",
+      "assets": 18,
+      "hmm_better": 7,
+      "hmm_better_p5": 2,
+      "rival_better_p5": 0,
+      "holm_p5": 2
+    },
+    {
+      "proxy": "r2",
+      "loss": "qlike",
+      "comparison": "hmm_vs_ewma",
+      "assets": 18,
+      "hmm_better": 6,
+      "hmm_better_p5": 1,
+      "rival_better_p5": 3,
+      "holm_p5": 0
+    },
+    {
+      "proxy": "r2",
+      "loss": "qlike",
+      "comparison": "hmm_vs_garch",
+      "assets": 18,
+      "hmm_better": 0,
+      "hmm_better_p5": 0,
+      "rival_better_p5": 8,
+      "holm_p5": 3
+    },
+    {
+      "proxy": "r2",
+      "loss": "qlike",
+      "comparison": "hmm_vs_har",
+      "assets": 18,
+      "hmm_better": 8,
+      "hmm_better_p5": 6,
+      "rival_better_p5": 5,
+      "holm_p5": 5
+    }
+  ]
+}

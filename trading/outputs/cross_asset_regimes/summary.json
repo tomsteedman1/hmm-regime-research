@@ -1,0 +1,28 @@
+{
+  "counts": [
+    {
+      "comparison": "own_plus_both_vs_own",
+      "assets": 17,
+      "improves": 15,
+      "improves_p5": 8,
+      "worsens_p5": 1,
+      "holm_p5": 2
+    },
+    {
+      "comparison": "own_plus_equity_regime_vs_own",
+      "assets": 17,
+      "improves": 12,
+      "improves_p5": 3,
+      "worsens_p5": 2,
+      "holm_p5": 1
+    },
+    {
+      "comparison": "own_plus_vix_vs_own",
+      "assets": 18,
+      "improves": 16,
+      "improves_p5": 10,
+      "worsens_p5": 0,
+      "holm_p5": 2
+    }
+  ]
+}

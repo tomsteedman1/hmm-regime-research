@@ -1,0 +1,9 @@
+comparison,assets,positive,below_5pct,expected_under_null,holm_below_5pct,cost
+regime_binary_vs_constant,18,8,1,0.9,0,base
+regime_binary_vs_vol_managed,18,9,1,0.9,0,base
+regime_scaled_vs_constant,18,11,0,0.9,0,base
+vol_managed_vs_constant,18,11,0,0.9,0,base
+regime_binary_vs_constant,18,7,0,0.9,0,double
+regime_binary_vs_vol_managed,18,9,2,0.9,0,double
+regime_scaled_vs_constant,18,11,0,0.9,0,double
+vol_managed_vs_constant,18,11,0,0.9,0,double

@@ -1,0 +1,95 @@
+{
+  "pooled": [
+    {
+      "comparison": "mean4_vs_mean3",
+      "mean_diff": -0.001388690739076075,
+      "stat": -0.49197932235801256,
+      "p_value": 0.6227339612651916,
+      "n": 2516,
+      "first_wins_assets": 9,
+      "assets": 18
+    },
+    {
+      "comparison": "geo4_vs_geo3",
+      "mean_diff": -0.0028476044304734235,
+      "stat": -0.7096177777850834,
+      "p_value": 0.4779411921962671,
+      "n": 2516,
+      "first_wins_assets": 11,
+      "assets": 18
+    },
+    {
+      "comparison": "mean3_vs_garch",
+      "mean_diff": -0.008306786752706874,
+      "stat": -2.2902407676090664,
+      "p_value": 0.022007363361066012,
+      "n": 2516,
+      "first_wins_assets": 12,
+      "assets": 18
+    },
+    {
+      "comparison": "geo4_vs_garch",
+      "mean_diff": -0.00522828546957879,
+      "stat": -0.9891005015175277,
+      "p_value": 0.3226139722782695,
+      "n": 2516,
+      "first_wins_assets": 12,
+      "assets": 18
+    },
+    {
+      "comparison": "encompassing_vs_garch",
+      "mean_diff": 0.06613310615235757,
+      "stat": 3.6519960540417613,
+      "p_value": 0.00026020988425035085,
+      "n": 2264,
+      "first_wins_assets": 0,
+      "assets": 18
+    }
+  ],
+  "counts": [
+    {
+      "comparison": "encompassing_vs_garch",
+      "assets": 18,
+      "first_better": 0,
+      "first_better_p5": 0,
+      "second_better_p5": 8,
+      "holm_p5": 2
+    },
+    {
+      "comparison": "geo4_vs_garch",
+      "assets": 18,
+      "first_better": 12,
+      "first_better_p5": 6,
+      "second_better_p5": 2,
+      "holm_p5": 2
+    },
+    {
+      "comparison": "geo4_vs_geo3",
+      "assets": 18,
+      "first_better": 11,
+      "first_better_p5": 5,
+      "second_better_p5": 0,
+      "holm_p5": 4
+    },
+    {
+      "comparison": "mean3_vs_garch",
+      "assets": 18,
+      "first_better": 12,
+      "first_better_p5": 7,
+      "second_better_p5": 2,
+      "holm_p5": 5
+    },
+    {
+      "comparison": "mean4_vs_mean3",
+      "assets": 18,
+      "first_better": 9,
+      "first_better_p5": 4,
+      "second_better_p5": 0,
+      "holm_p5": 1
+    }
+  ],
+  "median_weights": {
+    "w_garch": 0.6397103604392974,
+    "w_hmm": 0.24284029048659786
+  }
+}

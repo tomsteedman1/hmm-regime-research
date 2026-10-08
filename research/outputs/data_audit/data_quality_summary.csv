@@ -1,0 +1,11 @@
+check,value
+start_date,2010-01-04
+end_date,2024-12-30
+observations,3771
+duplicate_dates,0
+missing_prices,0
+zero_prices,0
+negative_prices,1
+undefined_log_returns,3
+minimum_price,-37.630001068115234
+maximum_price,123.6999969482422

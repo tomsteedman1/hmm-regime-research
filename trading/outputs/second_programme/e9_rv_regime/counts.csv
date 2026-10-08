@@ -1,0 +1,9 @@
+proxy,comparison,assets,first_better,first_better_p5,second_better_p5,holm_p5
+gk,rv_hmm_vs_ewma,18,7,3,3,3
+gk,rv_hmm_vs_garch,18,10,8,3,8
+gk,rv_hmm_vs_har,18,0,0,15,14
+gk,rv_hmm_vs_hmm,18,15,11,1,11
+r2,rv_hmm_vs_ewma,18,3,0,8,6
+r2,rv_hmm_vs_garch,18,0,0,10,7
+r2,rv_hmm_vs_har,18,3,2,8,7
+r2,rv_hmm_vs_hmm,18,2,0,10,7

@@ -1,0 +1,55 @@
+strategy  constant  regime_binary  regime_scaled  vol_managed
+key                                                          
+brent        0.064         -0.077         -0.007       -0.006
+copper       0.161         -0.009          0.068        0.184
+corn         0.050          0.233          0.174        0.213
+euro        -0.190         -0.197         -0.143       -0.216
+gld          0.533          0.219          0.368        0.478
+gold         0.539          0.534          0.519        0.516
+natgas       0.050          0.079          0.285        0.340
+silver       0.219          0.032          0.088        0.056
+soybeans    -0.018          0.281          0.155        0.036
+sp500        0.597          0.470          0.597        0.630
+spy          0.695          0.593          0.724        0.795
+tlt         -0.071          0.303          0.053        0.032
+tnote       -0.276         -0.277         -0.167       -0.294
+ung         -0.496         -0.383         -0.380       -0.267
+uso         -0.194          0.206          0.139        0.080
+wheat       -0.023          0.226          0.167        0.051
+wti          0.052         -0.045          0.115        0.130
+yen         -0.291         -0.274         -0.321       -0.405
+     key  mean_calm  mean_volatile  sd_calm  sd_volatile  share_calm  t_stat  p_value  p_holm
+     wti     -0.003          0.023    1.126        3.134       0.602  -0.372    0.710     1.0
+   brent     -0.011          0.028    1.764        3.057       0.450  -0.391    0.696     1.0
+  natgas      0.019          0.008    2.293        4.640       0.381   0.087    0.931     1.0
+    gold      0.033          0.026    0.844        1.148       0.763   0.144    0.886     1.0
+  silver      0.004          0.085    1.550        2.412       0.744  -0.859    0.391     1.0
+  copper      0.000          0.027    1.235        1.520       0.471  -0.469    0.639     1.0
+    corn      0.024         -0.033    1.300        2.169       0.673   0.710    0.478     1.0
+soybeans      0.023         -0.083    1.106        1.788       0.770   1.454    0.146     1.0
+   wheat      0.038         -0.035    1.699        2.210       0.444   0.921    0.357     1.0
+   sp500      0.028          0.062    0.687        1.537       0.577  -0.777    0.437     1.0
+   tnote     -0.006         -0.007    0.271        0.439       0.604   0.093    0.926     1.0
+    euro     -0.006         -0.006    0.421        0.645       0.677   0.024    0.981     1.0
+     yen     -0.009         -0.012    0.438        0.727       0.549   0.122    0.903     1.0
+     spy      0.034          0.070    0.686        1.542       0.596  -0.791    0.429     1.0
+     tlt      0.020         -0.044    0.777        1.214       0.625   1.652    0.098     1.0
+     gld      0.014          0.057    0.784        1.049       0.636  -1.162    0.245     1.0
+     uso      0.036         -0.079    1.736        2.971       0.418   1.144    0.253     1.0
+     ung     -0.076         -0.123    2.122        3.963       0.444   0.385    0.700     1.0
+universe   cost  sharpe_constant  sharpe_regime_binary  sharpe_regime_scaled  sharpe_vol_managed  diff_regime_binary_vs_constant  p_regime_binary_vs_constant  diff_regime_scaled_vs_constant  p_regime_scaled_vs_constant  diff_vol_managed_vs_constant  p_vol_managed_vs_constant  diff_regime_binary_vs_vol_managed  p_regime_binary_vs_vol_managed
+ futures   base            0.160                 0.214                 0.269               0.207                           0.053                        0.402                           0.109                        0.282                         0.046                      0.376                              0.007                           0.496
+ futures double            0.160                 0.186                 0.239               0.177                           0.026                        0.449                           0.079                        0.332                         0.017                      0.450                              0.010                           0.492
+    etfs   base            0.189                 0.423                 0.396               0.546                           0.234                        0.182                           0.207                        0.187                         0.357                      0.038                             -0.123                           0.796
+    etfs double            0.189                 0.399                 0.369               0.525                           0.210                        0.207                           0.180                        0.222                         0.336                      0.051                             -0.126                           0.801
+     all   base            0.174                 0.294                 0.322               0.314                           0.120                        0.289                           0.148                        0.222                         0.140                      0.186                             -0.020                           0.582
+     all double            0.174                 0.266                 0.290               0.285                           0.092                        0.339                           0.116                        0.270                         0.111                      0.242                             -0.020                           0.585
+                  comparison  assets  positive  below_5pct  expected_under_null  holm_below_5pct   cost
+   regime_binary_vs_constant      18         8           1                  0.9                0   base
+regime_binary_vs_vol_managed      18         9           1                  0.9                0   base
+   regime_scaled_vs_constant      18        11           0                  0.9                0   base
+     vol_managed_vs_constant      18        11           0                  0.9                0   base
+   regime_binary_vs_constant      18         7           0                  0.9                0 double
+regime_binary_vs_vol_managed      18         9           2                  0.9                0 double
+   regime_scaled_vs_constant      18        11           0                  0.9                0 double
+     vol_managed_vs_constant      18        11           0                  0.9                0 double

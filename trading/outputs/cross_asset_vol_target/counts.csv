@@ -1,0 +1,5 @@
+comparison,assets,positive,below_5pct,expected_under_null,holm_below_5pct,cost
+hmm_vs_ewma,18,6,0,0.9,0,base
+hmm_vs_garch,18,8,1,0.9,0,base
+hmm_vs_ewma,18,7,0,0.9,0,double
+hmm_vs_garch,18,8,1,0.9,0,double

@@ -1,0 +1,174 @@
+{
+  "pooled": [
+    {
+      "universe": "futures",
+      "cost": "base",
+      "sharpe_constant": 0.16049797609901498,
+      "sharpe_regime_binary": 0.21355958416984896,
+      "sharpe_regime_scaled": 0.26933927408604835,
+      "sharpe_vol_managed": 0.20660175409890344,
+      "diff_regime_binary_vs_constant": 0.05306160807083399,
+      "p_regime_binary_vs_constant": 0.4025,
+      "diff_regime_scaled_vs_constant": 0.10884129798703338,
+      "p_regime_scaled_vs_constant": 0.282,
+      "diff_vol_managed_vs_constant": 0.04610377799988846,
+      "p_vol_managed_vs_constant": 0.3755,
+      "diff_regime_binary_vs_vol_managed": 0.006957830070945525,
+      "p_regime_binary_vs_vol_managed": 0.4965
+    },
+    {
+      "universe": "futures",
+      "cost": "double",
+      "sharpe_constant": 0.16035745197624765,
+      "sharpe_regime_binary": 0.18649133003498652,
+      "sharpe_regime_scaled": 0.23918308027481816,
+      "sharpe_vol_managed": 0.17698970885907567,
+      "diff_regime_binary_vs_constant": 0.026133878058738874,
+      "p_regime_binary_vs_constant": 0.449,
+      "diff_regime_scaled_vs_constant": 0.07882562829857051,
+      "p_regime_scaled_vs_constant": 0.3325,
+      "diff_vol_managed_vs_constant": 0.016632256882828017,
+      "p_vol_managed_vs_constant": 0.45,
+      "diff_regime_binary_vs_vol_managed": 0.009501621175910857,
+      "p_regime_binary_vs_vol_managed": 0.492
+    },
+    {
+      "universe": "etfs",
+      "cost": "base",
+      "sharpe_constant": 0.1890120072653154,
+      "sharpe_regime_binary": 0.4232683303838085,
+      "sharpe_regime_scaled": 0.3964549925747532,
+      "sharpe_vol_managed": 0.5462919340216436,
+      "diff_regime_binary_vs_constant": 0.23425632311849312,
+      "p_regime_binary_vs_constant": 0.182,
+      "diff_regime_scaled_vs_constant": 0.2074429853094378,
+      "p_regime_scaled_vs_constant": 0.187,
+      "diff_vol_managed_vs_constant": 0.35727992675632814,
+      "p_vol_managed_vs_constant": 0.0385,
+      "diff_regime_binary_vs_vol_managed": -0.12302360363783504,
+      "p_regime_binary_vs_vol_managed": 0.7965
+    },
+    {
+      "universe": "etfs",
+      "cost": "double",
+      "sharpe_constant": 0.1889162065548338,
+      "sharpe_regime_binary": 0.3989526551366157,
+      "sharpe_regime_scaled": 0.3688953614226049,
+      "sharpe_vol_managed": 0.5250159271106115,
+      "diff_regime_binary_vs_constant": 0.21003644858178191,
+      "p_regime_binary_vs_constant": 0.207,
+      "diff_regime_scaled_vs_constant": 0.17997915486777108,
+      "p_regime_scaled_vs_constant": 0.222,
+      "diff_vol_managed_vs_constant": 0.33609972055577775,
+      "p_vol_managed_vs_constant": 0.051,
+      "diff_regime_binary_vs_vol_managed": -0.1260632719739958,
+      "p_regime_binary_vs_vol_managed": 0.801
+    },
+    {
+      "universe": "all",
+      "cost": "base",
+      "sharpe_constant": 0.17401855372120284,
+      "sharpe_regime_binary": 0.2943232843967273,
+      "sharpe_regime_scaled": 0.3219420560611319,
+      "sharpe_vol_managed": 0.31427442765023594,
+      "diff_regime_binary_vs_constant": 0.12030473067552444,
+      "p_regime_binary_vs_constant": 0.289,
+      "diff_regime_scaled_vs_constant": 0.14792350233992907,
+      "p_regime_scaled_vs_constant": 0.2215,
+      "diff_vol_managed_vs_constant": 0.1402558739290331,
+      "p_vol_managed_vs_constant": 0.186,
+      "diff_regime_binary_vs_vol_managed": -0.019951143253508663,
+      "p_regime_binary_vs_vol_managed": 0.5825
+    },
+    {
+      "universe": "all",
+      "cost": "double",
+      "sharpe_constant": 0.1738831870066322,
+      "sharpe_regime_binary": 0.2655599536069793,
+      "sharpe_regime_scaled": 0.29025681568357714,
+      "sharpe_vol_managed": 0.28530183195635495,
+      "diff_regime_binary_vs_constant": 0.09167676660034713,
+      "p_regime_binary_vs_constant": 0.339,
+      "diff_regime_scaled_vs_constant": 0.11637362867694495,
+      "p_regime_scaled_vs_constant": 0.2695,
+      "diff_vol_managed_vs_constant": 0.11141864494972276,
+      "p_vol_managed_vs_constant": 0.2425,
+      "diff_regime_binary_vs_vol_managed": -0.01974187834937563,
+      "p_regime_binary_vs_vol_managed": 0.585
+    }
+  ],
+  "counts": [
+    {
+      "comparison": "regime_binary_vs_constant",
+      "assets": 18,
+      "positive": 8,
+      "below_5pct": 1,
+      "expected_under_null": 0.9,
+      "holm_below_5pct": 0,
+      "cost": "base"
+    },
+    {
+      "comparison": "regime_binary_vs_vol_managed",
+      "assets": 18,
+      "positive": 9,
+      "below_5pct": 1,
+      "expected_under_null": 0.9,
+      "holm_below_5pct": 0,
+      "cost": "base"
+    },
+    {
+      "comparison": "regime_scaled_vs_constant",
+      "assets": 18,
+      "positive": 11,
+      "below_5pct": 0,
+      "expected_under_null": 0.9,
+      "holm_below_5pct": 0,
+      "cost": "base"
+    },
+    {
+      "comparison": "vol_managed_vs_constant",
+      "assets": 18,
+      "positive": 11,
+      "below_5pct": 0,
+      "expected_under_null": 0.9,
+      "holm_below_5pct": 0,
+      "cost": "base"
+    },
+    {
+      "comparison": "regime_binary_vs_constant",
+      "assets": 18,
+      "positive": 7,
+      "below_5pct": 0,
+      "expected_under_null": 0.9,
+      "holm_below_5pct": 0,
+      "cost": "double"
+    },
+    {
+      "comparison": "regime_binary_vs_vol_managed",
+      "assets": 18,
+      "positive": 9,
+      "below_5pct": 2,
+      "expected_under_null": 0.9,
+      "holm_below_5pct": 0,
+      "cost": "double"
+    },
+    {
+      "comparison": "regime_scaled_vs_constant",
+      "assets": 18,
+      "positive": 11,
+      "below_5pct": 0,
+      "expected_under_null": 0.9,
+      "holm_below_5pct": 0,
+      "cost": "double"
+    },
+    {
+      "comparison": "vol_managed_vs_constant",
+      "assets": 18,
+      "positive": 11,
+      "below_5pct": 0,
+      "expected_under_null": 0.9,
+      "holm_below_5pct": 0,
+      "cost": "double"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+ks_statistic,ks_p_value,ljung_box_statistic,ljung_box_p_value,ljung_box_squared_statistic,ljung_box_squared_p_value,residual_mean,residual_stdev,residual_skewness,residual_excess_kurtosis
+0.03077271749739524,0.0015514967021202672,28.08812574565976,0.1073296085224438,1679.60379031731,0.0,-0.002378040630236574,0.984612587301195,-0.09098445718895219,0.6883562979919384

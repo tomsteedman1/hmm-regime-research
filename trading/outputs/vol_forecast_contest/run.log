@@ -1,0 +1,46 @@
+model       ewma   garch     har     hmm  hmm_rank
+key                                               
+brent     1.6082  1.5954  1.6055  1.7795       4.0
+copper    1.5000  1.4585  1.9946  1.4700       2.0
+corn      1.3998  1.3789  1.3781  1.4197       4.0
+euro      1.3991  1.3652  1.3635  1.3914       3.0
+gld       1.5012  1.4695  1.8818  1.4930       2.0
+gold      1.6366  1.5830  1.7229  1.6095       2.0
+natgas    1.4135  1.4120  1.4026  1.4839       4.0
+silver    1.7540  1.6928  2.0592  1.7566       3.0
+soybeans  1.3877  1.3772  1.3986  1.3830       2.0
+sp500     1.6508  1.5678  1.5544  1.7256       4.0
+spy       1.6237  1.5547  1.6345  1.7076       4.0
+tlt       1.2589  1.2489  1.6667  1.3046       3.0
+tnote     1.2647  1.2400  1.2193  1.2707       4.0
+ung       1.2353  1.2314  1.6596  1.2840       3.0
+uso       1.3917  1.3866  1.6331  1.5881       3.0
+wheat     1.2672  1.2471  1.3034  1.3232       4.0
+wti       1.6853  1.7224  1.7243  2.3740       4.0
+yen       1.5078  1.4869  1.4777  1.4962       3.0
+ loss proxy   comparison  mean_diff    stat  p_value    n  hmm_wins_assets  assets
+qlike    r2  hmm_vs_ewma     0.0761  1.7147   0.0864 2516                6      18
+qlike    r2 hmm_vs_garch     0.1019  2.4124   0.0158 2516                0      18
+qlike    r2   hmm_vs_har    -0.0458 -1.1342   0.2567 2516                8      18
+  mse    r2  hmm_vs_ewma    10.8685  0.4483   0.6540 2516                4      18
+  mse    r2 hmm_vs_garch    15.4190  1.0481   0.2946 2516                0      18
+  mse    r2   hmm_vs_har    29.5240  1.5732   0.1157 2516                7      18
+qlike    gk  hmm_vs_ewma     0.1038  7.3604   0.0000 2516                0      18
+qlike    gk hmm_vs_garch     0.0669  5.0925   0.0000 2516                0      18
+qlike    gk   hmm_vs_har     0.2101 16.3545   0.0000 2516                0      18
+  mse    gk  hmm_vs_ewma   -32.2263 -1.7905   0.0734 2516               11      18
+  mse    gk hmm_vs_garch    -7.8378 -1.1576   0.2470 2516                9      18
+  mse    gk   hmm_vs_har    11.9132  1.8707   0.0614 2516                2      18
+proxy  loss   comparison  assets  hmm_better  hmm_better_p5  rival_better_p5  holm_p5
+   gk   mse  hmm_vs_ewma      18          11              3                0        1
+   gk   mse hmm_vs_garch      18           9              1                4        2
+   gk   mse   hmm_vs_har      18           2              0               10        9
+   gk qlike  hmm_vs_ewma      18           0              0               15       12
+   gk qlike hmm_vs_garch      18           0              0               12        9
+   gk qlike   hmm_vs_har      18           0              0               18       18
+   r2   mse  hmm_vs_ewma      18           4              0                0        0
+   r2   mse hmm_vs_garch      18           0              0                1        0
+   r2   mse   hmm_vs_har      18           7              2                0        2
+   r2 qlike  hmm_vs_ewma      18           6              1                3        0
+   r2 qlike hmm_vs_garch      18           0              0                8        3
+   r2 qlike   hmm_vs_har      18           8              6                5        5

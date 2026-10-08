@@ -1,0 +1,6 @@
+comparison,assets,first_better,first_better_p5,second_better_p5,holm_p5
+encompassing_vs_garch,18,0,0,8,2
+geo4_vs_garch,18,12,6,2,2
+geo4_vs_geo3,18,11,5,0,4
+mean3_vs_garch,18,12,7,2,5
+mean4_vs_mean3,18,9,4,0,1

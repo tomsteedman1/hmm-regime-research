@@ -1,0 +1,7 @@
+comparison,assets,first_better,first_better_p5,second_better_p5,holm_p5
+garch_x_vs_ewma,18,15,7,1,1
+garch_x_vs_garch,18,1,0,1,0
+garch_x_vs_hmm,18,18,8,0,5
+state_ewma_vs_ewma,18,14,6,0,2
+state_ewma_vs_garch,18,2,0,6,1
+state_ewma_vs_hmm,18,15,3,0,0

@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.publish/
+research/data/raw/*.csv
+trading/data/raw/*.csv
+!trading/data/raw/manifest.csv
+trading/outputs/signals/*_signals.csv
+trading/outputs/second_programme/e9_rv_regime/*_rv_signals.csv
+trading/outputs/second_programme/*.log
+# Daily output tables carry prices or returns and rebuild from the scripts.
+# Summary tables are tracked explicitly.
+research/outputs/**/*.csv
+trading/outputs/**/*.csv

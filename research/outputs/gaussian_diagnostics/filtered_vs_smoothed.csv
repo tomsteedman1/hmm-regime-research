@@ -1,0 +1,2 @@
+dates,filtered_vs_viterbi_disagreement,smoothed_vs_viterbi_disagreement,filtered_high_occupancy,viterbi_high_occupancy,mean_abs_filtered_minus_smoothed
+3770,0.02413793103448276,0.005039787798408488,0.041644562334217504,0.04774535809018567,0.025625496824062628

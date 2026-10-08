@@ -1,0 +1,124 @@
+{
+  "pooled": [
+    {
+      "state": 0,
+      "days": 26200,
+      "exits": 1035,
+      "slope_log_duration": -0.7857399419487026,
+      "se": 0.022353511493058434,
+      "z": -35.15062687992904,
+      "p_value": 0.0,
+      "real_mean_asset_slope": -0.7891639725777156,
+      "simulated_mean_slope_filtered_label": -0.7287003476379499,
+      "simulated_sd_across_assets": 0.06024539209953756
+    },
+    {
+      "state": 1,
+      "days": 19044,
+      "exits": 1018,
+      "slope_log_duration": -0.6346847208991317,
+      "se": 0.023925627004569214,
+      "z": -26.527401801337216,
+      "p_value": 0.0,
+      "real_mean_asset_slope": -0.637938395874176,
+      "simulated_mean_slope_filtered_label": -0.5979289790407426,
+      "simulated_sd_across_assets": 0.11701207826627691
+    }
+  ],
+  "pooled_hazard": [
+    {
+      "state": 0,
+      "bucket": "1-10",
+      "days": 5363.0,
+      "exits": 705.0,
+      "hazard": 0.1314562744732426
+    },
+    {
+      "state": 0,
+      "bucket": "11-30",
+      "days": 5250.0,
+      "exits": 136.0,
+      "hazard": 0.025904761904761906
+    },
+    {
+      "state": 0,
+      "bucket": "31-90",
+      "days": 6819.0,
+      "exits": 127.0,
+      "hazard": 0.018624431734858483
+    },
+    {
+      "state": 0,
+      "bucket": "91-inf",
+      "days": 8768.0,
+      "exits": 67.0,
+      "hazard": 0.007641423357664234
+    },
+    {
+      "state": 1,
+      "bucket": "1-10",
+      "days": 5794.0,
+      "exits": 662.0,
+      "hazard": 0.11425612702795995
+    },
+    {
+      "state": 1,
+      "bucket": "11-30",
+      "days": 4922.0,
+      "exits": 201.0,
+      "hazard": 0.04083705810646079
+    },
+    {
+      "state": 1,
+      "bucket": "31-90",
+      "days": 4837.0,
+      "exits": 123.0,
+      "hazard": 0.025428984908000826
+    },
+    {
+      "state": 1,
+      "bucket": "91-inf",
+      "days": 3491.0,
+      "exits": 32.0,
+      "hazard": 0.00916642795760527
+    }
+  ],
+  "simulated_control": [
+    {
+      "label": "filtered_label",
+      "state": 0,
+      "count": 180.0,
+      "mean": -0.7287003476379499,
+      "std": 0.11475028977391258,
+      "min": -1.0749986017017925,
+      "max": -0.4101988729880714
+    },
+    {
+      "label": "filtered_label",
+      "state": 1,
+      "count": 180.0,
+      "mean": -0.5979289790407426,
+      "std": 0.15381125358724723,
+      "min": -0.9206080347419087,
+      "max": -0.0001947258404414073
+    },
+    {
+      "label": "true_state",
+      "state": 0,
+      "count": 169.0,
+      "mean": 0.18103935898167875,
+      "std": 0.2950595441573571,
+      "min": -0.30879572399210575,
+      "max": 2.055488129823819
+    },
+    {
+      "label": "true_state",
+      "state": 1,
+      "count": 171.0,
+      "mean": 0.24227808951639968,
+      "std": 0.23332240295201073,
+      "min": -0.36961910179174384,
+      "max": 1.0849662833173914
+    }
+  ]
+}

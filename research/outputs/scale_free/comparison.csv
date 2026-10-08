@@ -1,0 +1,4 @@
+candidate,observation,dollar_log_likelihood,dollar_bic,dollar_heldout_log_likelihood,parameters,g3_pass,g4_pass,g4_roll_record_pass,min_occupancy,g6_persistence_pass,viterbi_agreement_with_t2,replaces_t2
+T2,price change,-6603.491303868812,13281.096080261603,-2911.618501310086,9,True,True,True,0.2793103448275862,True,1.0,selected before 8 Oct 2026
+A2,"asinh return, scale $10",-6663.324882163682,13400.763236851342,-2962.9609024758765,9,True,False,True,0.3594164456233422,True,0.7909814323607427,False
+A2G,"asinh return, scale $10",-6962.756903200682,13983.15761836446,-4379.7579426453085,7,True,False,True,0.014854111405835544,True,0.7312997347480106,"control, cannot replace"

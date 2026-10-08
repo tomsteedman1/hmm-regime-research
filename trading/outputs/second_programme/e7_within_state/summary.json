@@ -1,0 +1,108 @@
+{
+  "pooled": [
+    {
+      "comparison": "state_ewma_vs_garch",
+      "mean_diff": 0.018859822231333367,
+      "stat": 3.576118640531339,
+      "p_value": 0.0003487334338592163,
+      "n": 2516,
+      "first_wins_assets": 2,
+      "assets": 18
+    },
+    {
+      "comparison": "state_ewma_vs_hmm",
+      "mean_diff": -0.08304227173882076,
+      "stat": -1.9183271312225798,
+      "p_value": 0.05506954429848121,
+      "n": 2516,
+      "first_wins_assets": 15,
+      "assets": 18
+    },
+    {
+      "comparison": "state_ewma_vs_ewma",
+      "mean_diff": -0.0069898028782794715,
+      "stat": -1.9832427825103578,
+      "p_value": 0.04734031718624698,
+      "n": 2516,
+      "first_wins_assets": 14,
+      "assets": 18
+    },
+    {
+      "comparison": "garch_x_vs_garch",
+      "mean_diff": 0.010239795596619689,
+      "stat": 2.5192733954686766,
+      "p_value": 0.011759730762328724,
+      "n": 2516,
+      "first_wins_assets": 1,
+      "assets": 18
+    },
+    {
+      "comparison": "garch_x_vs_hmm",
+      "mean_diff": -0.09166229837353443,
+      "stat": -2.372399430801786,
+      "p_value": 0.017672973609932585,
+      "n": 2516,
+      "first_wins_assets": 18,
+      "assets": 18
+    },
+    {
+      "comparison": "garch_x_vs_ewma",
+      "mean_diff": -0.015609829512993152,
+      "stat": -1.856873722820491,
+      "p_value": 0.0633291218730132,
+      "n": 2516,
+      "first_wins_assets": 15,
+      "assets": 18
+    }
+  ],
+  "counts": [
+    {
+      "comparison": "garch_x_vs_ewma",
+      "assets": 18,
+      "first_better": 15,
+      "first_better_p5": 7,
+      "second_better_p5": 1,
+      "holm_p5": 1
+    },
+    {
+      "comparison": "garch_x_vs_garch",
+      "assets": 18,
+      "first_better": 1,
+      "first_better_p5": 0,
+      "second_better_p5": 1,
+      "holm_p5": 0
+    },
+    {
+      "comparison": "garch_x_vs_hmm",
+      "assets": 18,
+      "first_better": 18,
+      "first_better_p5": 8,
+      "second_better_p5": 0,
+      "holm_p5": 5
+    },
+    {
+      "comparison": "state_ewma_vs_ewma",
+      "assets": 18,
+      "first_better": 14,
+      "first_better_p5": 6,
+      "second_better_p5": 0,
+      "holm_p5": 2
+    },
+    {
+      "comparison": "state_ewma_vs_garch",
+      "assets": 18,
+      "first_better": 2,
+      "first_better_p5": 0,
+      "second_better_p5": 6,
+      "holm_p5": 1
+    },
+    {
+      "comparison": "state_ewma_vs_hmm",
+      "assets": 18,
+      "first_better": 15,
+      "first_better_p5": 3,
+      "second_better_p5": 0,
+      "holm_p5": 0
+    }
+  ]
+}

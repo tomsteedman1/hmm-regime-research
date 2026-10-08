@@ -1,0 +1,7 @@
+comparison,assets,positive,below_5pct,expected_under_null,holm_below_5pct,cost
+tsmom_ewma_cut_vs_tsmom_ewma,18,8,1,0.9,0,base
+tsmom_garch_vs_tsmom_ewma,18,10,1,0.9,0,base
+tsmom_hmm_vs_tsmom_ewma,18,9,0,0.9,0,base
+tsmom_ewma_cut_vs_tsmom_ewma,18,8,1,0.9,0,double
+tsmom_garch_vs_tsmom_ewma,18,10,1,0.9,0,double
+tsmom_hmm_vs_tsmom_ewma,18,9,1,0.9,0,double

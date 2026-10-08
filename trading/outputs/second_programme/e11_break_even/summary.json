@@ -1,0 +1,22 @@
+{
+  "pooled": [
+    {
+      "universe": "futures",
+      "sharpe_diff_at_1bp": -0.014978602101987953,
+      "sharpe_diff_at_10bp": 0.03870401785797523,
+      "sharpe_diff_at_100bp": 0.5742991269295534,
+      "break_even_bp": 4.0,
+      "turnover_ratio": 0.572854957129792
+    },
+    {
+      "universe": "all",
+      "sharpe_diff_at_1bp": -0.06727769413847523,
+      "sharpe_diff_at_10bp": -0.016217676168215497,
+      "sharpe_diff_at_100bp": 0.49265784585289274,
+      "break_even_bp": 13.0,
+      "turnover_ratio": 0.5981654267098442
+    }
+  ],
+  "median_turnover_ratio": 0.49024536547764863,
+  "assets_break_even_below_10bp": 10
+}

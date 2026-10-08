@@ -1,0 +1,158 @@
+{
+  "pooled": [
+    {
+      "proxy": "r2",
+      "comparison": "rv_hmm_vs_har",
+      "mean_diff": 0.16652483801921145,
+      "stat": 2.669540573227706,
+      "p_value": 0.007595509582356552,
+      "n": 2516,
+      "first_wins_assets": 3,
+      "assets": 18
+    },
+    {
+      "proxy": "r2",
+      "comparison": "rv_hmm_vs_garch",
+      "mean_diff": 0.31419239930840226,
+      "stat": 4.730791286437293,
+      "p_value": 2.236463675808764e-06,
+      "n": 2516,
+      "first_wins_assets": 0,
+      "assets": 18
+    },
+    {
+      "proxy": "r2",
+      "comparison": "rv_hmm_vs_hmm",
+      "mean_diff": 0.21229030533824814,
+      "stat": 6.694825534874529,
+      "p_value": 2.1592949650539595e-11,
+      "n": 2516,
+      "first_wins_assets": 2,
+      "assets": 18
+    },
+    {
+      "proxy": "r2",
+      "comparison": "rv_hmm_vs_ewma",
+      "mean_diff": 0.28834277419878945,
+      "stat": 4.195064958823162,
+      "p_value": 2.727933969359775e-05,
+      "n": 2516,
+      "first_wins_assets": 3,
+      "assets": 18
+    },
+    {
+      "proxy": "gk",
+      "comparison": "rv_hmm_vs_har",
+      "mean_diff": 0.14620591841083794,
+      "stat": 4.471999360231416,
+      "p_value": 7.749165938264468e-06,
+      "n": 2516,
+      "first_wins_assets": 0,
+      "assets": 18
+    },
+    {
+      "proxy": "gk",
+      "comparison": "rv_hmm_vs_garch",
+      "mean_diff": 0.0030330191723370423,
+      "stat": 0.08985098240061819,
+      "p_value": 0.9284056338986386,
+      "n": 2516,
+      "first_wins_assets": 10,
+      "assets": 18
+    },
+    {
+      "proxy": "gk",
+      "comparison": "rv_hmm_vs_hmm",
+      "mean_diff": -0.06398468009721585,
+      "stat": -2.936246324680241,
+      "p_value": 0.003322104094132916,
+      "n": 2516,
+      "first_wins_assets": 15,
+      "assets": 18
+    },
+    {
+      "proxy": "gk",
+      "comparison": "rv_hmm_vs_ewma",
+      "mean_diff": 0.03955059856963654,
+      "stat": 1.1604628918330286,
+      "p_value": 0.2458603936322512,
+      "n": 2516,
+      "first_wins_assets": 7,
+      "assets": 18
+    }
+  ],
+  "counts": [
+    {
+      "proxy": "gk",
+      "comparison": "rv_hmm_vs_ewma",
+      "assets": 18,
+      "first_better": 7,
+      "first_better_p5": 3,
+      "second_better_p5": 3,
+      "holm_p5": 3
+    },
+    {
+      "proxy": "gk",
+      "comparison": "rv_hmm_vs_garch",
+      "assets": 18,
+      "first_better": 10,
+      "first_better_p5": 8,
+      "second_better_p5": 3,
+      "holm_p5": 8
+    },
+    {
+      "proxy": "gk",
+      "comparison": "rv_hmm_vs_har",
+      "assets": 18,
+      "first_better": 0,
+      "first_better_p5": 0,
+      "second_better_p5": 15,
+      "holm_p5": 14
+    },
+    {
+      "proxy": "gk",
+      "comparison": "rv_hmm_vs_hmm",
+      "assets": 18,
+      "first_better": 15,
+      "first_better_p5": 11,
+      "second_better_p5": 1,
+      "holm_p5": 11
+    },
+    {
+      "proxy": "r2",
+      "comparison": "rv_hmm_vs_ewma",
+      "assets": 18,
+      "first_better": 3,
+      "first_better_p5": 0,
+      "second_better_p5": 8,
+      "holm_p5": 6
+    },
+    {
+      "proxy": "r2",
+      "comparison": "rv_hmm_vs_garch",
+      "assets": 18,
+      "first_better": 0,
+      "first_better_p5": 0,
+      "second_better_p5": 10,
+      "holm_p5": 7
+    },
+    {
+      "proxy": "r2",
+      "comparison": "rv_hmm_vs_har",
+      "assets": 18,
+      "first_better": 3,
+      "first_better_p5": 2,
+      "second_better_p5": 8,
+      "holm_p5": 7
+    },
+    {
+      "proxy": "r2",
+      "comparison": "rv_hmm_vs_hmm",
+      "assets": 18,
+      "first_better": 2,
+      "first_better_p5": 0,
+      "second_better_p5": 10,
+      "holm_p5": 7
+    }
+  ]
+}
