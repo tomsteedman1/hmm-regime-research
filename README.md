@@ -1,7 +1,41 @@
 # Hidden Markov regimes in WTI crude and eighteen other markets
 
-This repository holds two linked projects, written from scratch in Python
-with numpy and scipy.
+[![tests](https://github.com/tomsteedman1/hmm-regime-research/actions/workflows/tests.yml/badge.svg)](https://github.com/tomsteedman1/hmm-regime-research/actions/workflows/tests.yml)
+![Python 3.12 to 3.14](https://img.shields.io/badge/python-3.12%20%7C%203.13%20%7C%203.14-blue)
+[![MIT licence](https://img.shields.io/badge/licence-MIT-green)](LICENSE)
+
+![WTI crude 2010 to 2024 with the high-volatility regime of the selected two-state Student-t HMM shaded](research/outputs/headline/wti_regimes.png)
+
+## At a glance
+
+| Question | Answer | Evidence |
+|---|---|---|
+| Does a hidden Markov model find stable volatility regimes in WTI crude? | Yes. Of six candidates, only the two-state Student-t model passed every gate. The gates were fixed before any fit. | [Model comparison](research/MODEL_COMPARISON_RESULT.md) |
+| Does its regime signal size a WTI position better than 21-day realised volatility? | No. The Sharpe ratio was 0.12 higher (p = 0.23), and the whole margin came from 20 and 21 April 2020. | [Walk-forward test](trading/WALK_FORWARD_RESULT.md) |
+| Does it forecast variance across eighteen futures and ETFs? | Less well than GARCH(1,1)-t on pooled QLIKE loss (p = 0.016). | [Cross-asset report](https://tomsteedman1.github.io/hmm-regime-research/trading/CROSS_ASSET_REPORT.html) |
+| Does it improve any trading rule across those markets? | No pooled test favours it. Five of 162 per-asset tests fall below 5%, where chance alone gives 8.1. | [Cross-asset results](trading/CROSS_ASSET_RESULTS.md) |
+
+The HMM is written from scratch in numpy and scipy: scaled forward-backward,
+Baum-Welch with a Student-t EM step, and Viterbi decoding. Its likelihood and
+state paths match `hmmlearn` in a cross-check test. Every pass and fail
+threshold was written down before the result it judges, and the 2025 to 2026
+data stays sealed. The trading results are mostly negative, and they are
+reported in full.
+
+## Start here
+
+1. Run `python demo.py`. It needs no market data and takes a few seconds. It
+   simulates two volatility regimes, fits the model, and shows how closely
+   the fit recovers the true parameters and hidden states.
+2. Read the [model comparison](research/MODEL_COMPARISON_RESULT.md). It
+   shows why the two-state Student-t model was selected and where it
+   still falls short.
+3. Read the [walk-forward trading test](trading/WALK_FORWARD_RESULT.md). It
+   is the one registered test of whether the regimes are worth money.
+4. Open the [cross-asset report](https://tomsteedman1.github.io/hmm-regime-research/trading/CROSS_ASSET_REPORT.html). It is one page that covers
+   eighteen markets and six questions.
+
+## The two projects
 
 1. **Research** (`research/`). Can a hidden Markov model find stable
    volatility regimes in daily WTI crude oil futures prices, 2010 to 2024?
@@ -9,11 +43,6 @@ with numpy and scipy.
    signal improve a trading rule, after costs, against simple rules that
    need no model? The same question is then asked across eighteen futures
    and ETFs.
-
-Short answer: the model finds stable regimes in WTI. Its regime signal
-adds nothing that simpler volatility estimates do not already give.
-
-![State paths of the six candidate models on WTI, 2010 to 2024](research/outputs/model_comparison/01_state_paths.png)
 
 ## How the work was done
 
@@ -52,6 +81,8 @@ The two-state Gaussian model gave its high state to a few extreme days
 around April 2020. The Student-t model takes those days into its fat
 tails and finds a broad, persistent volatile regime. Its state means are
 close to zero, so it finds volatility states, not trend states.
+
+![State paths of the six candidate models on WTI, 2010 to 2024](research/outputs/model_comparison/01_state_paths.png)
 
 Three later checks, each registered before it was run, left T2 in place.
 Without the 180 futures roll days T2 keeps 96.2% Viterbi agreement with
@@ -115,16 +146,24 @@ and [`trading/SECOND_PROGRAMME_RESULTS.md`](trading/SECOND_PROGRAMME_RESULTS.md)
   metrics, block bootstrap.
 - `trading/stats_tools.py`: QLIKE, Diebold-Mariano with Newey-West
   errors, Holm correction.
+- `demo.py`: fits the model to simulated data and checks recovery.
 
 The numbered scripts in each folder run the stages in order. Each folder
 has its own README with the stage list.
 
 ## Running it
 
-Python 3.14 was used. Install the packages, then download the data:
+The results were produced with Python 3.14. The tests run on Python 3.12,
+3.13 and 3.14 on every push. Install the packages and run the demo:
 
 ```bash
 pip install -r requirements.txt
+python demo.py
+```
+
+To rebuild the results, download the data:
+
+```bash
 python download_data.py
 ```
 
@@ -144,7 +183,9 @@ cd ../trading && python 01_roll_audit.py   # and so on, see trading/README.md
 python -m pytest
 ```
 
-The `hmmlearn` cross-check test skips if `hmmlearn` is not installed.
+Tests that need the price files skip when the files are missing. The
+`hmmlearn` cross-check test skips if `hmmlearn` is not installed. Install it
+with `pip install hmmlearn` where a wheel exists for your Python version.
 
 ## A note on the documents
 

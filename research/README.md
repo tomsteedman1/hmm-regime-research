@@ -62,6 +62,7 @@ of freedom have a wide bootstrap interval (8 to 39).
 | `06_model_comparison.py` | Two, three and four states, Gaussian and Student-t, against every gate |
 | `07_selected_model_bootstrap.py` | Bootstrap standard errors for the selected model |
 | `08_scale_free_comparison.py` | Asinh-return candidate against T2 in dollar units |
+| `09_headline_chart.py` | Refits T2, checks it against the registered result, draws the README chart |
 
 Scripts 06 and 07 read their input from `series.py`. A new market or
 observation is one new entry there, then

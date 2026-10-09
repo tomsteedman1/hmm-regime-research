@@ -13,3 +13,4 @@ trading/outputs/second_programme/*.log
 # Summary tables are tracked explicitly.
 research/outputs/**/*.csv
 trading/outputs/**/*.csv
+demo_regimes.png
