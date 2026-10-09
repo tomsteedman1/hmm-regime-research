@@ -1,7 +1,7 @@
 # Trading gates
 
 Registered: 2 September 2026, before any backtest on real data. Every
-threshold below was put to Tom as a choice with alternatives and confirmed.
+threshold below was put to the author as a choice with alternatives and confirmed.
 
 These gates judge whether the selected two-state Student-t HMM (T2) adds
 value to a volatility-targeting rule. They follow the same discipline as the
@@ -64,7 +64,7 @@ weakened in response.
 ## Change log
 
 - 2 September 2026: draft written before any backtest on real data.
-- 2 September 2026: registered. Tom confirmed TG1 at p < 0.05 under all
+- 2 September 2026: registered. The author confirmed TG1 at p < 0.05 under all
   three roll treatments, costs of $0.01 and $0.02, a 20% volatility band
   with a 3-unit cap, and that the Master repo's "research only, no business
   ideas" rule covers this project as well.
